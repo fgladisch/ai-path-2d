@@ -427,7 +427,7 @@ public class AIPath2D : MonoBehaviour
         if (magn == 0)
             return a;
 
-		float closest = Mathf.Clamp01 (AstarMath.NearestPointFactor (a, b, p));
+	float closest = Mathf.Clamp01 (AstarMath.NearestPointFactor (a, b, p));
         Vector2 point = (b - a) * closest + a;
         float distance = (point - p).magnitude;
 
